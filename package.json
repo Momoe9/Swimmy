@@ -5,11 +5,11 @@
   "type": "module",
   "homepage": "https://Momoe9.github.io/Swimmy",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@react-three/drei": "^9.117.2",
